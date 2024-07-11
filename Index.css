@@ -1,20 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://t4.ftcdn.net/jpg/06/29/74/85/360_F_629748538_FGo3si6sm8MpXEInFQ9ZOas0AJN0zJWH.jpg');
+    background-image: url('https://images.unsplash.com/photo-1619947603049-1cc0708f336e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     height: 100vh;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   form {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: 40px auto;
+    width: 75%;
+    max-width: 500px;
   }
   
   h2 {
@@ -25,29 +28,33 @@ body {
   label {
     display: block;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   
-  input[type="text"], input[type="password"] {
-    width: 100%;
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
   }
   
   input[type="checkbox"] {
     margin-right: 10px;
   }
   
-  button[type="submit"] {
+  #create-user-button {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
   }
   
-  button[type="submit"]:hover {
+  #create-user-button:hover {
     background-color: #3e8e41;
   }
   
@@ -59,26 +66,17 @@ body {
   a:hover {
     color: #23527c;
   }
-  .g-signin2 {
-    /* Make the Google Sign-In button visible */
-    display: inline-block;
-    width: 240px;
-    height: 40px;
-    margin: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4285f4;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+  
+  .bx {
+    margin-right: 10px;
+    vertical-align: middle;
   }
   
-  .g-signin2:hover {
-    background-color: #3367d6;
+  p {
+    text-align: center;
+    margin: 10px 0;
   }
   
-  .g-signin2:active {
-    background-color: #2e5eaa;
+  .notification {
+    position: fixed; 
   }

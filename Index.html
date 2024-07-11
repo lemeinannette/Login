@@ -2,36 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="" />
-    <title>Login Page</title>
-    <link rel="stylesheet"href="Index.css">
+    <meta name="description" content="Login page" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="Index.css">
   </head>
   <body>
-    <form>
-      <!--Username input -->
-      <label for=" Username">Username</label>
+    <form id="create-account-form">
+      <!-- Username input -->
+      <label for="Name">Username</label>
       <input type="text" id="Name" name="Name" required /><br /><br />
-      <!--password input-->
+      <!-- Password input -->
       <label for="Password">Password</label>
-      <input
-        type="text"
-        id="Password"
-        password="password"
-        required
-      />
-      <input  type="checkbox"id ="Remember me" Remember me ="Remember me"/>
-      <a href="forgot password">Forgot password ?</a><br><br>
-      <!--Email-->
+      <input type="password" id="Password" name="Password" required /><br /><br />
+      <!-- Email input -->
       <label for="Email">Email</label>
-      <input type="text" id="email" Email="Email"  required/><br /><br />
-      <!--button-->
-      <button type="submit">Login</button><br>
-      <a href="create account"> Create Account</a>
-      <section id ="Google Login"> 
-      <button>Login with Google</button>
-      </section>
+      <input type="email" id="Email" name="Email" required /><br /><br />
+      <!-- Create Account button -->
+      <button type="submit">Create Account</button><br /><br />
+      <!-- Back to Login link -->
+      <a href="login.html">Back to Login</a>
     </form>
     
-    <script>"Index.js"</script>
+    <script src="Index.js"></script>
   </body>
 </html>

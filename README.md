@@ -58,6 +58,8 @@ If you encounter any issues with this project, please report them in the [Issues
 **Author**
 ---------
  Lemein Annette
+
+ 
 lemeinannette (GitHub username)
 
 **License**
